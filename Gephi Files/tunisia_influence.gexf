@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="affiliation" type="string" />
+      <attribute id="1" title="pageRank" type="double" />
+      <attribute id="2" title="community" type="long" />
+      <attribute id="3" title="nodeType" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.2</creator>
+      <lastmodified>09/05/2019</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Youssef Chahed" label="Youssef Chahed">
+        <attvalues>
+          <attvalue for="0" value="Nidaa Tounes" />
+          <attvalue for="1" value="0.027540596571890924" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="Muhammad Karki" label="Muhammad Karki">
+        <attvalues>
+          <attvalue for="1" value="0.00770525962295598" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="El Sebsi" label="El Sebsi">
+        <attvalues>
+          <attvalue for="1" value="0.007772795332715267" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="Rashid Ghannouchi" label="Rashid Ghannouchi">
+        <attvalues>
+          <attvalue for="0" value="Ennahda" />
+          <attvalue for="1" value="0.011458044461248295" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="Baji Kaid Essebsi" label="Baji Kaid Essebsi">
+        <attvalues>
+          <attvalue for="0" value="Nidaa Tounes" />
+          <attvalue for="1" value="0.012181142139047" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="Ben Ali" label="Ben Ali">
+        <attvalues>
+          <attvalue for="1" value="0.008039162288824354" />
+          <attvalue for="2" value="9" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="El Abidine Ben Ali" label="El Abidine Ben Ali">
+        <attvalues>
+          <attvalue for="1" value="0.00963350915129074" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="Hafedh Essebssi" label="Hafedh Essebssi">
+        <attvalues>
+          <attvalue for="0" value="Nidaa Tounes" />
+          <attvalue for="1" value="0.006434109179591101" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="Kanzler Saad Hariri" label="Kanzler Saad Hariri">
+        <attvalues>
+          <attvalue for="1" value="0.007645613165808199" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="Kanzler Ali" label="Kanzler Ali">
+        <attvalues>
+          <attvalue for="1" value="0.0069805218501052466" />
+          <attvalue for="2" value="8" />
+          <attvalue for="3" value="Actor" />
+        </attvalues>
+      </node>
+      <node id="GENERAL_GOVERNMENT" label="GENERAL_GOVERNMENT">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="LEADER" label="LEADER">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="INFO_RUMOR" label="INFO_RUMOR">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="JIHAD" label="JIHAD">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="TERROR" label="TERROR">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="LEGISLATION" label="LEGISLATION">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="ELECTION" label="ELECTION">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="PROTEST" label="PROTEST">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="MEDIA_MSM" label="MEDIA_MSM">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="DEMOCRACY" label="DEMOCRACY">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="BORDER" label="BORDER">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="CORRUPTION" label="CORRUPTION">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="ALLIANCE" label="ALLIANCE">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="GOV_REFORM" label="GOV_REFORM">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="RELIGION" label="RELIGION">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="IDEOLOGY" label="IDEOLOGY">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="ELECTION_FRAUD" label="ELECTION_FRAUD">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="SELF_IDENTIFIED_HUMAN_RIGHTS" label="SELF_IDENTIFIED_HUMAN_RIGHTS">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="REBELS" label="REBELS">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="IMPEACHMENT" label="IMPEACHMENT">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="SLFID_DICTATORSHIP" label="SLFID_DICTATORSHIP">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="EXTREMISM" label="EXTREMISM">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="MEDIA_SOCIAL" label="MEDIA_SOCIAL">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="SEPARATISTS" label="SEPARATISTS">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="FREESPEECH" label="FREESPEECH">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="PERSECUTION" label="PERSECUTION">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="TOURISM" label="TOURISM">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="TREASON" label="TREASON">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="PROPAGANDA" label="PROPAGANDA">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="GOV_DISSOLVEGOV" label="GOV_DISSOLVEGOV">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="INFO_HOAX" label="INFO_HOAX">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="CHARASMATIC_LEADERSHIP" label="CHARASMATIC_LEADERSHIP">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="MEDIA_CENSORSHIP" label="MEDIA_CENSORSHIP">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="SCANDAL" label="SCANDAL">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="GOV_DIVISIONOFPOWER" label="GOV_DIVISIONOFPOWER">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="HATE_SPEECH" label="HATE_SPEECH">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="POLITICAL_PRISONER" label="POLITICAL_PRISONER">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="UNREST_POLICEBRUTALITY" label="UNREST_POLICEBRUTALITY">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="CLAIM_CREDIT" label="CLAIM_CREDIT">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+      <node id="INTERNET_CENSORSHIP" label="INTERNET_CENSORSHIP">
+        <attvalues>
+          <attvalue for="3" value="Theme" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Youssef Chahed" target="GENERAL_GOVERNMENT" weight="332.17121546062657" />
+      <edge id="1" source="Youssef Chahed" target="LEADER" weight="319.1063200896212" />
+      <edge id="2" source="Youssef Chahed" target="INFO_RUMOR" weight="3.237744299079573" />
+      <edge id="3" source="Youssef Chahed" target="MEDIA_MSM" weight="80.67051845362285" />
+      <edge id="4" source="Youssef Chahed" target="ELECTION" weight="144.324661304525" />
+      <edge id="5" source="Youssef Chahed" target="ALLIANCE" weight="107.59973774355511" />
+      <edge id="6" source="Youssef Chahed" target="LEGISLATION" weight="115.95144676921583" />
+      <edge id="7" source="Youssef Chahed" target="SLFID_DICTATORSHIP" weight="9.11703226224954" />
+      <edge id="8" source="Youssef Chahed" target="PROTEST" weight="82.68330987068305" />
+      <edge id="9" source="Youssef Chahed" target="CORRUPTION" weight="27.715170656025553" />
+      <edge id="10" source="Youssef Chahed" target="TOURISM" weight="21.0406549043462" />
+      <edge id="11" source="Youssef Chahed" target="RELIGION" weight="31.73701004829671" />
+      <edge id="12" source="Youssef Chahed" target="PROPAGANDA" weight="4.80585067381165" />
+      <edge id="13" source="Youssef Chahed" target="TERROR" weight="69.01414910395022" />
+      <edge id="14" source="Youssef Chahed" target="DEMOCRACY" weight="40.52292119851306" />
+      <edge id="15" source="Youssef Chahed" target="IDEOLOGY" weight="33.54428450503396" />
+      <edge id="16" source="Youssef Chahed" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="69.64237280295548" />
+      <edge id="17" source="Youssef Chahed" target="FREESPEECH" weight="15.084243426689705" />
+      <edge id="18" source="Youssef Chahed" target="TREASON" weight="3.777076610415706" />
+      <edge id="19" source="Youssef Chahed" target="MEDIA_SOCIAL" weight="8.503885168399682" />
+      <edge id="20" source="Youssef Chahed" target="REBELS" weight="2.0261755605954175" />
+      <edge id="21" source="Youssef Chahed" target="BORDER" weight="56.431211734731974" />
+      <edge id="22" source="Youssef Chahed" target="ELECTION_FRAUD" weight="8.345333884266465" />
+      <edge id="23" source="Youssef Chahed" target="JIHAD" weight="10.000210246283887" />
+      <edge id="24" source="Youssef Chahed" target="SCANDAL" weight="7.796079701212177" />
+      <edge id="25" source="Youssef Chahed" target="EXTREMISM" weight="9.741352856694514" />
+      <edge id="26" source="Youssef Chahed" target="PERSECUTION" weight="3.8875446441957724" />
+      <edge id="27" source="Youssef Chahed" target="CHARASMATIC_LEADERSHIP" weight="0.12645566807184835" />
+      <edge id="28" source="Youssef Chahed" target="HATE_SPEECH" weight="0.015924697477714" />
+      <edge id="29" source="Youssef Chahed" target="SEPARATISTS" weight="0.8961079523314652" />
+      <edge id="30" source="Youssef Chahed" target="GOV_REFORM" weight="0.18001744881955706" />
+      <edge id="31" source="Youssef Chahed" target="MEDIA_CENSORSHIP" weight="0.897428465881743" />
+      <edge id="32" source="Muhammad Karki" target="GENERAL_GOVERNMENT" weight="44.38496157685163" />
+      <edge id="33" source="Muhammad Karki" target="JIHAD" weight="1.0647266342227035" />
+      <edge id="34" source="Muhammad Karki" target="TERROR" weight="11.588531024560506" />
+      <edge id="35" source="Muhammad Karki" target="LEGISLATION" weight="11.311119982202513" />
+      <edge id="36" source="Muhammad Karki" target="LEADER" weight="72.94074014703129" />
+      <edge id="37" source="Muhammad Karki" target="ALLIANCE" weight="6.2013039893626845" />
+      <edge id="38" source="Muhammad Karki" target="ELECTION" weight="20.659288576203856" />
+      <edge id="39" source="Muhammad Karki" target="REBELS" weight="0.21414252085606872" />
+      <edge id="40" source="Muhammad Karki" target="RELIGION" weight="15.52882336057752" />
+      <edge id="41" source="Muhammad Karki" target="MEDIA_MSM" weight="6.9622317041076816" />
+      <edge id="42" source="Muhammad Karki" target="TREASON" weight="0.6006142252985445" />
+      <edge id="43" source="Muhammad Karki" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="2.9850586138297044" />
+      <edge id="44" source="Muhammad Karki" target="IDEOLOGY" weight="3.185327583449471" />
+      <edge id="45" source="Muhammad Karki" target="CORRUPTION" weight="0.7500471419081269" />
+      <edge id="46" source="Muhammad Karki" target="DEMOCRACY" weight="2.5821711263001275" />
+      <edge id="47" source="Muhammad Karki" target="TOURISM" weight="7.43793012595959" />
+      <edge id="48" source="Muhammad Karki" target="SLFID_DICTATORSHIP" weight="0.8576204239908256" />
+      <edge id="49" source="Muhammad Karki" target="MEDIA_SOCIAL" weight="1.7153617835717931" />
+      <edge id="50" source="Muhammad Karki" target="EXTREMISM" weight="7.055038748881616" />
+      <edge id="51" source="Muhammad Karki" target="SCANDAL" weight="1.260159486836302" />
+      <edge id="52" source="Muhammad Karki" target="PROTEST" weight="3.3531402419631333" />
+      <edge id="53" source="Muhammad Karki" target="SEPARATISTS" weight="1.0962280275971392" />
+      <edge id="54" source="Muhammad Karki" target="BORDER" weight="2.7251090440464667" />
+      <edge id="55" source="Muhammad Karki" target="INFO_RUMOR" weight="1.5124195869355013" />
+      <edge id="56" source="El Sebsi" target="GENERAL_GOVERNMENT" weight="95.60319927754054" />
+      <edge id="57" source="El Sebsi" target="ELECTION" weight="52.859023819140525" />
+      <edge id="58" source="El Sebsi" target="PROTEST" weight="4.697950752538477" />
+      <edge id="59" source="El Sebsi" target="MEDIA_MSM" weight="20.4515511057593" />
+      <edge id="60" source="El Sebsi" target="DEMOCRACY" weight="16.9621494825513" />
+      <edge id="61" source="El Sebsi" target="LEADER" weight="154.38811695294004" />
+      <edge id="62" source="El Sebsi" target="RELIGION" weight="9.968307097214089" />
+      <edge id="63" source="El Sebsi" target="ALLIANCE" weight="17.29969958282177" />
+      <edge id="64" source="El Sebsi" target="ELECTION_FRAUD" weight="0.8589076081164045" />
+      <edge id="65" source="El Sebsi" target="EXTREMISM" weight="1.2709497779983163" />
+      <edge id="66" source="El Sebsi" target="LEGISLATION" weight="15.816506489776273" />
+      <edge id="67" source="El Sebsi" target="BORDER" weight="22.12558504934461" />
+      <edge id="68" source="El Sebsi" target="TERROR" weight="18.887564314081914" />
+      <edge id="69" source="El Sebsi" target="GOV_REFORM" weight="0.2325505566836717" />
+      <edge id="70" source="El Sebsi" target="MEDIA_SOCIAL" weight="9.47805653538325" />
+      <edge id="71" source="El Sebsi" target="CHARASMATIC_LEADERSHIP" weight="0.21819093810467138" />
+      <edge id="72" source="El Sebsi" target="IDEOLOGY" weight="3.0046689943653524" />
+      <edge id="73" source="El Sebsi" target="JIHAD" weight="1.11476742918821" />
+      <edge id="74" source="El Sebsi" target="TOURISM" weight="3.0317528988014906" />
+      <edge id="75" source="El Sebsi" target="INFO_RUMOR" weight="1.6748817925504684" />
+      <edge id="76" source="El Sebsi" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="4.473709636094328" />
+      <edge id="77" source="El Sebsi" target="IMPEACHMENT" weight="0.07012538278855149" />
+      <edge id="78" source="El Sebsi" target="CORRUPTION" weight="2.8053054781297244" />
+      <edge id="79" source="El Sebsi" target="SCANDAL" weight="0.2622133071310051" />
+      <edge id="80" source="El Sebsi" target="SLFID_DICTATORSHIP" weight="3.0748510146334143" />
+      <edge id="81" source="Rashid Ghannouchi" target="GENERAL_GOVERNMENT" weight="116.54651458283335" />
+      <edge id="82" source="Rashid Ghannouchi" target="ELECTION" weight="48.66833881028974" />
+      <edge id="83" source="Rashid Ghannouchi" target="PROTEST" weight="6.067128594288814" />
+      <edge id="84" source="Rashid Ghannouchi" target="MEDIA_MSM" weight="30.410838471501332" />
+      <edge id="85" source="Rashid Ghannouchi" target="DEMOCRACY" weight="20.427259980820196" />
+      <edge id="86" source="Rashid Ghannouchi" target="LEADER" weight="172.23578263645604" />
+      <edge id="87" source="Rashid Ghannouchi" target="RELIGION" weight="10.430904263035378" />
+      <edge id="88" source="Rashid Ghannouchi" target="ALLIANCE" weight="36.713336367093795" />
+      <edge id="89" source="Rashid Ghannouchi" target="EXTREMISM" weight="4.359052560675877" />
+      <edge id="90" source="Rashid Ghannouchi" target="LEGISLATION" weight="23.446353053145" />
+      <edge id="91" source="Rashid Ghannouchi" target="TERROR" weight="13.384191123506431" />
+      <edge id="92" source="Rashid Ghannouchi" target="GOV_REFORM" weight="0.19794449951075702" />
+      <edge id="93" source="Rashid Ghannouchi" target="MEDIA_SOCIAL" weight="1.5004311442102027" />
+      <edge id="94" source="Rashid Ghannouchi" target="CHARASMATIC_LEADERSHIP" weight="0.33777345432040584" />
+      <edge id="95" source="Rashid Ghannouchi" target="IDEOLOGY" weight="14.051210662723953" />
+      <edge id="96" source="Rashid Ghannouchi" target="ELECTION_FRAUD" weight="2.1198850463626604" />
+      <edge id="97" source="Rashid Ghannouchi" target="JIHAD" weight="1.7049930783294192" />
+      <edge id="98" source="Rashid Ghannouchi" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="10.726882678551888" />
+      <edge id="99" source="Rashid Ghannouchi" target="PERSECUTION" weight="2.379483363480096" />
+      <edge id="100" source="Rashid Ghannouchi" target="BORDER" weight="32.54595314399331" />
+      <edge id="101" source="Rashid Ghannouchi" target="TOURISM" weight="16.490224763163244" />
+      <edge id="102" source="Rashid Ghannouchi" target="INFO_RUMOR" weight="0.445463993856872" />
+      <edge id="103" source="Rashid Ghannouchi" target="TREASON" weight="5.033888241065189" />
+      <edge id="104" source="Rashid Ghannouchi" target="CORRUPTION" weight="13.780508364336159" />
+      <edge id="105" source="Rashid Ghannouchi" target="SLFID_DICTATORSHIP" weight="3.868735985525235" />
+      <edge id="106" source="Rashid Ghannouchi" target="SCANDAL" weight="5.313342702188818" />
+      <edge id="107" source="Rashid Ghannouchi" target="SEPARATISTS" weight="0.1553605564205084" />
+      <edge id="108" source="Rashid Ghannouchi" target="POLITICAL_PRISONER" weight="1.4677216027992213" />
+      <edge id="109" source="Rashid Ghannouchi" target="PROPAGANDA" weight="0.2027128876501071" />
+      <edge id="110" source="Rashid Ghannouchi" target="FREESPEECH" weight="0.7225064420043035" />
+      <edge id="111" source="Rashid Ghannouchi" target="REBELS" weight="0.6893643357913446" />
+      <edge id="112" source="Baji Kaid Essebsi" target="GENERAL_GOVERNMENT" weight="186.78445796604086" />
+      <edge id="113" source="Baji Kaid Essebsi" target="LEADER" weight="211.37536947697632" />
+      <edge id="114" source="Baji Kaid Essebsi" target="ALLIANCE" weight="17.327792464050397" />
+      <edge id="115" source="Baji Kaid Essebsi" target="ELECTION_FRAUD" weight="1.073465271229738" />
+      <edge id="116" source="Baji Kaid Essebsi" target="MEDIA_MSM" weight="20.10777960706277" />
+      <edge id="117" source="Baji Kaid Essebsi" target="ELECTION" weight="60.83379574298986" />
+      <edge id="118" source="Baji Kaid Essebsi" target="TERROR" weight="23.664655453219883" />
+      <edge id="119" source="Baji Kaid Essebsi" target="REBELS" weight="1.0543493157422579" />
+      <edge id="120" source="Baji Kaid Essebsi" target="RELIGION" weight="17.132366159773472" />
+      <edge id="121" source="Baji Kaid Essebsi" target="EXTREMISM" weight="4.668627387452966" />
+      <edge id="122" source="Baji Kaid Essebsi" target="DEMOCRACY" weight="11.706574889017562" />
+      <edge id="123" source="Baji Kaid Essebsi" target="PROTEST" weight="10.929549938883278" />
+      <edge id="124" source="Baji Kaid Essebsi" target="LEGISLATION" weight="39.00222607026252" />
+      <edge id="125" source="Baji Kaid Essebsi" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="18.896024850626066" />
+      <edge id="126" source="Baji Kaid Essebsi" target="FREESPEECH" weight="1.5649619964045247" />
+      <edge id="127" source="Baji Kaid Essebsi" target="PERSECUTION" weight="6.599978046202415" />
+      <edge id="128" source="Baji Kaid Essebsi" target="JIHAD" weight="7.577496237670974" />
+      <edge id="129" source="Baji Kaid Essebsi" target="TOURISM" weight="3.5080432566938136" />
+      <edge id="130" source="Baji Kaid Essebsi" target="GOV_REFORM" weight="1.0554401568052798" />
+      <edge id="131" source="Baji Kaid Essebsi" target="GOV_DISSOLVEGOV" weight="0.07771660265240561" />
+      <edge id="132" source="Baji Kaid Essebsi" target="BORDER" weight="33.34963747985172" />
+      <edge id="133" source="Baji Kaid Essebsi" target="CHARASMATIC_LEADERSHIP" weight="0.4983583413739149" />
+      <edge id="134" source="Baji Kaid Essebsi" target="IDEOLOGY" weight="12.74755702187798" />
+      <edge id="135" source="Baji Kaid Essebsi" target="CORRUPTION" weight="4.143986367024204" />
+      <edge id="136" source="Baji Kaid Essebsi" target="MEDIA_SOCIAL" weight="2.1080141618842765" />
+      <edge id="137" source="Baji Kaid Essebsi" target="MEDIA_CENSORSHIP" weight="0.051438443123571306" />
+      <edge id="138" source="Baji Kaid Essebsi" target="SLFID_DICTATORSHIP" weight="0.38715189295652197" />
+      <edge id="139" source="Baji Kaid Essebsi" target="SCANDAL" weight="5.185731411333551" />
+      <edge id="140" source="Baji Kaid Essebsi" target="TREASON" weight="1.0888134026305767" />
+      <edge id="141" source="Baji Kaid Essebsi" target="INFO_RUMOR" weight="0.48942357313437396" />
+      <edge id="142" source="Baji Kaid Essebsi" target="PROPAGANDA" weight="1.1544998090628753" />
+      <edge id="143" source="Baji Kaid Essebsi" target="IMPEACHMENT" weight="0.5847972491574795" />
+      <edge id="144" source="Baji Kaid Essebsi" target="SEPARATISTS" weight="1.1957906360661383" />
+      <edge id="145" source="Ben Ali" target="MEDIA_MSM" weight="4.2379592446363" />
+      <edge id="146" source="Ben Ali" target="LEGISLATION" weight="24.498120563447088" />
+      <edge id="147" source="Ben Ali" target="LEADER" weight="97.08354257266981" />
+      <edge id="148" source="Ben Ali" target="GENERAL_GOVERNMENT" weight="62.07076428214375" />
+      <edge id="149" source="Ben Ali" target="ELECTION" weight="15.320813946795134" />
+      <edge id="150" source="Ben Ali" target="ALLIANCE" weight="4.42857268281299" />
+      <edge id="151" source="Ben Ali" target="JIHAD" weight="3.0261502176911446" />
+      <edge id="152" source="Ben Ali" target="TERROR" weight="3.3949508488255065" />
+      <edge id="153" source="Ben Ali" target="RELIGION" weight="16.708937794736528" />
+      <edge id="154" source="Ben Ali" target="TREASON" weight="3.9547799649394584" />
+      <edge id="155" source="Ben Ali" target="CORRUPTION" weight="11.65358677549013" />
+      <edge id="156" source="Ben Ali" target="SLFID_DICTATORSHIP" weight="3.238991619618379" />
+      <edge id="157" source="Ben Ali" target="IDEOLOGY" weight="2.9684912996762276" />
+      <edge id="158" source="Ben Ali" target="MEDIA_SOCIAL" weight="8.150497871466523" />
+      <edge id="159" source="Ben Ali" target="DEMOCRACY" weight="10.87094598284835" />
+      <edge id="160" source="Ben Ali" target="PROTEST" weight="6.2538128252229" />
+      <edge id="161" source="Ben Ali" target="TOURISM" weight="23.747324011014467" />
+      <edge id="162" source="Ben Ali" target="EXTREMISM" weight="2.522343767340176" />
+      <edge id="163" source="Ben Ali" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="11.553243769794893" />
+      <edge id="164" source="Ben Ali" target="BORDER" weight="9.080797269920597" />
+      <edge id="165" source="Ben Ali" target="INFO_RUMOR" weight="0.47944357303353424" />
+      <edge id="166" source="Ben Ali" target="SCANDAL" weight="0.20928949360729612" />
+      <edge id="167" source="Ben Ali" target="PROPAGANDA" weight="1.2561381575212163" />
+      <edge id="168" source="Ben Ali" target="FREESPEECH" weight="1.3903495878398386" />
+      <edge id="169" source="Ben Ali" target="HATE_SPEECH" weight="0.23996498496117918" />
+      <edge id="170" source="Ben Ali" target="REBELS" weight="0.7980205331951601" />
+      <edge id="171" source="Ben Ali" target="IMPEACHMENT" weight="0.5956956126166771" />
+      <edge id="172" source="El Abidine Ben Ali" target="GENERAL_GOVERNMENT" weight="56.564156998470004" />
+      <edge id="173" source="El Abidine Ben Ali" target="MEDIA_MSM" weight="9.980463703406505" />
+      <edge id="174" source="El Abidine Ben Ali" target="LEADER" weight="123.57608373382043" />
+      <edge id="175" source="El Abidine Ben Ali" target="LEGISLATION" weight="20.603605741917974" />
+      <edge id="176" source="El Abidine Ben Ali" target="TERROR" weight="11.713003809501123" />
+      <edge id="177" source="El Abidine Ben Ali" target="DEMOCRACY" weight="12.711868968923293" />
+      <edge id="178" source="El Abidine Ben Ali" target="EXTREMISM" weight="5.1315194055460855" />
+      <edge id="179" source="El Abidine Ben Ali" target="ALLIANCE" weight="13.352902131251238" />
+      <edge id="180" source="El Abidine Ben Ali" target="ELECTION" weight="24.84946280129481" />
+      <edge id="181" source="El Abidine Ben Ali" target="JIHAD" weight="4.096662178219988" />
+      <edge id="182" source="El Abidine Ben Ali" target="TREASON" weight="1.698996408599714" />
+      <edge id="183" source="El Abidine Ben Ali" target="CORRUPTION" weight="2.513237435711538" />
+      <edge id="184" source="El Abidine Ben Ali" target="SLFID_DICTATORSHIP" weight="1.4377510697826876" />
+      <edge id="185" source="El Abidine Ben Ali" target="RELIGION" weight="5.879596792601044" />
+      <edge id="186" source="El Abidine Ben Ali" target="IDEOLOGY" weight="7.793356897553908" />
+      <edge id="187" source="El Abidine Ben Ali" target="MEDIA_SOCIAL" weight="5.357841479594715" />
+      <edge id="188" source="El Abidine Ben Ali" target="BORDER" weight="3.897326934492662" />
+      <edge id="189" source="El Abidine Ben Ali" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="0.943977433000758" />
+      <edge id="190" source="El Abidine Ben Ali" target="PROTEST" weight="6.423704372041571" />
+      <edge id="191" source="El Abidine Ben Ali" target="TOURISM" weight="4.45419766217128" />
+      <edge id="192" source="El Abidine Ben Ali" target="GOV_DIVISIONOFPOWER" weight="0.41673641787816634" />
+      <edge id="193" source="El Abidine Ben Ali" target="SCANDAL" weight="0.3553207111605099" />
+      <edge id="194" source="El Abidine Ben Ali" target="REBELS" weight="1.0747599167798043" />
+      <edge id="195" source="El Abidine Ben Ali" target="IMPEACHMENT" weight="0.05053013204129617" />
+      <edge id="196" source="El Abidine Ben Ali" target="CHARASMATIC_LEADERSHIP" weight="0.48980863504418637" />
+      <edge id="197" source="El Abidine Ben Ali" target="MEDIA_CENSORSHIP" weight="0.05552397852529023" />
+      <edge id="198" source="El Abidine Ben Ali" target="INFO_RUMOR" weight="0.046099003228861846" />
+      <edge id="199" source="El Abidine Ben Ali" target="HATE_SPEECH" weight="0.050186046921413305" />
+      <edge id="200" source="Hafedh Essebssi" target="GENERAL_GOVERNMENT" weight="121.11810135671674" />
+      <edge id="201" source="Hafedh Essebssi" target="MEDIA_MSM" weight="28.561670832429208" />
+      <edge id="202" source="Hafedh Essebssi" target="ELECTION" weight="61.45240161413664" />
+      <edge id="203" source="Hafedh Essebssi" target="LEADER" weight="149.42610725685017" />
+      <edge id="204" source="Hafedh Essebssi" target="ALLIANCE" weight="16.48280947077527" />
+      <edge id="205" source="Hafedh Essebssi" target="CORRUPTION" weight="13.923324740662625" />
+      <edge id="206" source="Hafedh Essebssi" target="IDEOLOGY" weight="13.974331578444545" />
+      <edge id="207" source="Hafedh Essebssi" target="DEMOCRACY" weight="9.839286118138217" />
+      <edge id="208" source="Hafedh Essebssi" target="SLFID_DICTATORSHIP" weight="0.7909194353063704" />
+      <edge id="209" source="Hafedh Essebssi" target="PROTEST" weight="3.5725706900234417" />
+      <edge id="210" source="Hafedh Essebssi" target="TOURISM" weight="11.64148421071484" />
+      <edge id="211" source="Hafedh Essebssi" target="EXTREMISM" weight="1.1753041395326789" />
+      <edge id="212" source="Hafedh Essebssi" target="BORDER" weight="11.46003266052804" />
+      <edge id="213" source="Hafedh Essebssi" target="RELIGION" weight="7.434359466851621" />
+      <edge id="214" source="Hafedh Essebssi" target="PROPAGANDA" weight="0.2496460069181733" />
+      <edge id="215" source="Hafedh Essebssi" target="TERROR" weight="18.892557291838447" />
+      <edge id="216" source="Hafedh Essebssi" target="LEGISLATION" weight="46.54814126918333" />
+      <edge id="217" source="Hafedh Essebssi" target="INFO_RUMOR" weight="1.8903597627409034" />
+      <edge id="218" source="Hafedh Essebssi" target="TREASON" weight="1.702231748254345" />
+      <edge id="219" source="Hafedh Essebssi" target="MEDIA_SOCIAL" weight="2.8513464369706996" />
+      <edge id="220" source="Hafedh Essebssi" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="17.399340554586956" />
+      <edge id="221" source="Hafedh Essebssi" target="REBELS" weight="0.07170735507228441" />
+      <edge id="222" source="Hafedh Essebssi" target="IMPEACHMENT" weight="0.0385550796860129" />
+      <edge id="223" source="Hafedh Essebssi" target="JIHAD" weight="7.752869416582076" />
+      <edge id="224" source="Hafedh Essebssi" target="SCANDAL" weight="1.0990571749091766" />
+      <edge id="225" source="Hafedh Essebssi" target="SEPARATISTS" weight="0.699838656322896" />
+      <edge id="226" source="Kanzler Saad Hariri" target="GENERAL_GOVERNMENT" weight="49.30014468737209" />
+      <edge id="227" source="Kanzler Saad Hariri" target="LEADER" weight="47.182186949354" />
+      <edge id="228" source="Kanzler Saad Hariri" target="ALLIANCE" weight="7.558566976845237" />
+      <edge id="229" source="Kanzler Saad Hariri" target="ELECTION" weight="20.22026723378062" />
+      <edge id="230" source="Kanzler Saad Hariri" target="MEDIA_MSM" weight="8.86651221291008" />
+      <edge id="231" source="Kanzler Saad Hariri" target="GOV_REFORM" weight="0.45429775345114437" />
+      <edge id="232" source="Kanzler Saad Hariri" target="RELIGION" weight="8.893224526007211" />
+      <edge id="233" source="Kanzler Saad Hariri" target="LEGISLATION" weight="1.2586627005381785" />
+      <edge id="234" source="Kanzler Saad Hariri" target="TERROR" weight="3.36650537290459" />
+      <edge id="235" source="Kanzler Saad Hariri" target="DEMOCRACY" weight="13.136237875929691" />
+      <edge id="236" source="Kanzler Saad Hariri" target="CHARASMATIC_LEADERSHIP" weight="0.6804702515627518" />
+      <edge id="237" source="Kanzler Saad Hariri" target="IDEOLOGY" weight="0.3472548904854038" />
+      <edge id="238" source="Kanzler Saad Hariri" target="EXTREMISM" weight="1.0452218036213763" />
+      <edge id="239" source="Kanzler Saad Hariri" target="SEPARATISTS" weight="1.589004092975497" />
+      <edge id="240" source="Kanzler Saad Hariri" target="TOURISM" weight="7.01085333586193" />
+      <edge id="241" source="Kanzler Saad Hariri" target="MEDIA_SOCIAL" weight="3.2631661302725203" />
+      <edge id="242" source="Kanzler Saad Hariri" target="JIHAD" weight="0.5450485389597777" />
+      <edge id="243" source="Kanzler Saad Hariri" target="PROTEST" weight="5.532073782486546" />
+      <edge id="244" source="Kanzler Saad Hariri" target="INFO_RUMOR" weight="0.7481175941007163" />
+      <edge id="245" source="Kanzler Saad Hariri" target="BORDER" weight="3.2586275337067754" />
+      <edge id="246" source="Kanzler Saad Hariri" target="CORRUPTION" weight="0.463117714554446" />
+      <edge id="247" source="Kanzler Saad Hariri" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="0.07018079862439508" />
+      <edge id="248" source="Kanzler Saad Hariri" target="SCANDAL" weight="0.2518631700350646" />
+      <edge id="249" source="Kanzler Saad Hariri" target="TREASON" weight="0.012878606174895712" />
+      <edge id="250" source="Kanzler Saad Hariri" target="SLFID_DICTATORSHIP" weight="0.8509889996198223" />
+      <edge id="251" source="Kanzler Ali" target="GENERAL_GOVERNMENT" weight="95.33535480024533" />
+      <edge id="252" source="Kanzler Ali" target="LEADER" weight="69.34678840303114" />
+      <edge id="253" source="Kanzler Ali" target="LEGISLATION" weight="9.646781867063265" />
+      <edge id="254" source="Kanzler Ali" target="ELECTION" weight="26.886200151905825" />
+      <edge id="255" source="Kanzler Ali" target="ALLIANCE" weight="8.24549886474789" />
+      <edge id="256" source="Kanzler Ali" target="RELIGION" weight="7.426776470194637" />
+      <edge id="257" source="Kanzler Ali" target="INFO_RUMOR" weight="1.667928758480612" />
+      <edge id="258" source="Kanzler Ali" target="MEDIA_MSM" weight="22.03743488506478" />
+      <edge id="259" source="Kanzler Ali" target="TOURISM" weight="4.798952546811223" />
+      <edge id="260" source="Kanzler Ali" target="DEMOCRACY" weight="4.258031592896368" />
+      <edge id="261" source="Kanzler Ali" target="PROTEST" weight="8.50440800269226" />
+      <edge id="262" source="Kanzler Ali" target="REBELS" weight="3.7116449713195467" />
+      <edge id="263" source="Kanzler Ali" target="TREASON" weight="1.0598466460614029" />
+      <edge id="264" source="Kanzler Ali" target="MEDIA_SOCIAL" weight="9.220828320257118" />
+      <edge id="265" source="Kanzler Ali" target="EXTREMISM" weight="6.688444993690765" />
+      <edge id="266" source="Kanzler Ali" target="CORRUPTION" weight="3.2754392582283915" />
+      <edge id="267" source="Kanzler Ali" target="IDEOLOGY" weight="3.1365209817847473" />
+      <edge id="268" source="Kanzler Ali" target="TERROR" weight="13.382873155452627" />
+      <edge id="269" source="Kanzler Ali" target="BORDER" weight="2.6377850359278012" />
+      <edge id="270" source="Kanzler Ali" target="SLFID_DICTATORSHIP" weight="1.3509299589221087" />
+      <edge id="271" source="Kanzler Ali" target="SCANDAL" weight="0.5927121907950201" />
+      <edge id="272" source="Kanzler Ali" target="SELF_IDENTIFIED_HUMAN_RIGHTS" weight="0.6795774040874616" />
+      <edge id="273" source="Kanzler Ali" target="IMPEACHMENT" weight="0.022343660215096182" />
+      <edge id="274" source="Kanzler Ali" target="GOV_DISSOLVEGOV" weight="3.988792933064116" />
+    </edges>
+  </graph>
+</gexf>

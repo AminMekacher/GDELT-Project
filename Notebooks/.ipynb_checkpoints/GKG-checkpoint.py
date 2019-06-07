@@ -16,6 +16,7 @@ import re
 import nltk
 
 import os
+import simplejson as json
 
 def social_graph_creation(G, dataframe):
     import numpy as np
@@ -83,6 +84,32 @@ def social_graph_creation(G, dataframe):
                         G[actor1][actor2]['weight'] += weight_edge
                     else:
                         G.add_edge(actor1, actor2, weight = weight_edge)
+                        
+def network_edge_filtering(graph, threshold):
+    '''
+    Method used to remove the edges from a network whose weight is below a specific threshold
+    Returns a graph with the remaining edges and all isolated nodes removed
+    '''
+    
+    edges_to_remove, nodes_to_remove = [], []
+    
+    for u, v, data in graph.edges(data=True):
+        weight = data['weight']
+        if weight < threshold:
+            edges_to_remove.append((u, v))
+        
+    print("Removed edge: ", len(edges_to_remove))
+    graph.remove_edges_from(edges_to_remove)
+        #print("Edge: ", u, v, a['weight'])
+    for (node, degree) in graph.degree:
+        #print("Node: ", node, degree)
+        if degree == 0:
+            nodes_to_remove.append(node)
+            
+    print("Removed nodes: ", len(nodes_to_remove))
+    graph.remove_nodes_from(nodes_to_remove)
+        
+    return graph
         
 def maximum_offset_difference(actor_list, theme_list):
     
@@ -125,6 +152,7 @@ def theme_network_creation(G_themes, list_actor, dataframe, themes_of_interest, 
                                               dataframe.V2ENHANCEDTHEMES.unique(), dataframe.GKGRECORDID):
         
         actor_list_temp, offset_list_temp = [], []
+        #print("begin: ", actor_list, theme_list, doc_id)
     
         if not isinstance(actor_list, float):
             for actor in actor_list.split(';'):
@@ -133,8 +161,9 @@ def theme_network_creation(G_themes, list_actor, dataframe, themes_of_interest, 
     
         # First, we need to get the themes and their respective offset in two separate lists
         
-        if not isinstance(theme_list, float):
+        if not isinstance(theme_list, float) and not isinstance(actor_list, float):
             
+            #print("Here: ", doc_id)
             number_theme = len(theme_list)
             max_offset_diff = maximum_offset_difference(actor_list, theme_list)
             
@@ -148,7 +177,7 @@ def theme_network_creation(G_themes, list_actor, dataframe, themes_of_interest, 
                         if not G_themes.has_node(theme_temp):
                             G_themes.add_node(theme_temp)
 
-                        '''
+                        
                         index_actor = np.argmin(np.abs([offset - offset_temp for offset in offset_list_temp]))
                         actor_offset = actor_list_temp[index_actor]
 
@@ -159,8 +188,8 @@ def theme_network_creation(G_themes, list_actor, dataframe, themes_of_interest, 
                         index_max = np.argmax([jellyfish.jaro_winkler(actor_offset, actor2) for 
                                                       actor2 in list_actor])
                         actor_max = list_actor[index_max]
-                        '''
                         
+                        '''
                         for (actor, offset_actor) in zip(actor_list_temp, offset_list_temp):
                             offset_diff = np.abs(offset_actor - offset_temp)
                             
@@ -179,6 +208,14 @@ def theme_network_creation(G_themes, list_actor, dataframe, themes_of_interest, 
                             else:
                                 #print("New edge! ", actor_max, theme_temp)
                                 G_themes.add_edge(actor_max, theme_temp, weight = weight_theme)
+                        '''
+                        #print("Theme: ", doc_id, theme_temp)
+                        weight_theme = tf_idf[doc_id][theme_temp]
+                        
+                        if G_themes.has_edge(actor_max, theme_temp):
+                            G_themes[actor_max][theme_temp]['weight'] += weight_theme
+                        else:
+                            G_themes.add_edge(actor_max, theme_temp, weight=weight_theme)
                                       
         
     return G_themes
@@ -318,21 +355,25 @@ def tf_idf_computation(dataframe, themes_of_interest):
     
     tf_score, idf_score, tf_idf = {}, {}, {}
     number_docs = len(dataframe.GKGRECORDID)
-    print("Num: ", number_docs)
+    #print("Num: ", number_docs)
     
     for theme_interest in themes_of_interest:
         #print("New theme: ", theme_interest)
         for theme_list, doc_id in zip(dataframe.V2ENHANCEDTHEMES.unique(), dataframe.GKGRECORDID):
+            #print("Doc theme: ", doc_id, theme_list)
             theme_found = False
             if not isinstance(theme_list, float):
                 for theme in theme_list.split(';'):
                     if theme:
                         theme_temp = theme.split(',')[0]
+                        #print("New themeprev: ", theme_temp)
                         # Checking if the theme is the one we are currently looking for
                         if theme_temp == theme_interest:
+                            #print("New theme: ", theme_temp)
                             
                             # We increment the tf_score of the theme in the current document
                             if doc_id not in tf_score:
+                                #print("Adding doc: ", doc_id)
                                 tf_score[doc_id] = {}
                             
                             if theme_interest not in tf_score[doc_id]:
@@ -353,10 +394,14 @@ def tf_idf_computation(dataframe, themes_of_interest):
                                 
                                 theme_found = True
                                 #print("IDF: ", idf_score)
+                            
+            #print("Finished doc: ", tf_score[doc_id], doc_id)
                                 
     # Last step: compute the tf-idf score for each theme for each document
     for doc_id in dataframe.GKGRECORDID:
+        #print("Doc out: ", doc_id)
         if doc_id in tf_score:
+            #print("Doc in: ", doc_id)
             tf_temp = tf_score[doc_id]
             max_tf = np.max(list(tf_temp.values()))
             
@@ -464,3 +509,16 @@ def appendDFToCSV(df, csvFilePath, sep="\t"):
         raise Exception("Columns and column order of dataframe and csv file do not match!!")
     else:
         df.to_csv(csvFilePath, mode='a', index=False, sep=sep, header=False)
+        
+def save_to_json(G, fname):
+    json.dump(dict(nodes=[[n, G.node[n]] for n in G.nodes()],
+                   edges=[[u, v, G.get_edge_data(u, v)] for u,v in G.edges()]),
+              open(fname, 'w'), indent=2)
+    
+
+def load_json(fname):
+    G = nx.DiGraph()
+    d = json.load(open(fname))
+    G.add_nodes_from(d['nodes'])
+    G.add_edges_from(d['edges'])
+    return G
